@@ -1,0 +1,45 @@
+// base/reset
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Article images: uniform crop, rounded corners and per-item visual variants */
+.post-list .post-thumbnail img,
+.card .post-thumbnail img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  display: block;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.woocommerce div.product .woocommerce-product-gallery__image img,
+.woocommerce div.product .woocommerce-product-gallery__wrapper img {
+  border-radius: var(--radius);
+}

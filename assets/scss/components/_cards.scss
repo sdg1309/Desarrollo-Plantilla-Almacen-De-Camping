@@ -1,0 +1,40 @@
+// components/cards
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-header h1,
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.05;
+}
+
+.section-description {
+  max-width: 44rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.card {
+  box-shadow: none;
+}
+
+.post-list > article.card:nth-child(3n+1) .post-thumbnail img {
+  filter: saturate(1) contrast(1);
+}
+
+.post-list > article.card:nth-child(3n+2) .post-thumbnail img {
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.post-list > article.card:nth-child(3n) .post-thumbnail img {
+  filter: sepia(0.06) brightness(0.98);
+}
+
+.post-list .post-thumbnail img:hover { transform: scale(1.02); }

@@ -1,0 +1,134 @@
+// components/search
+
+/* Search */
+.header-search {
+  position: relative; /* importante */
+  display: flex;
+  align-items: center;
+  width: min(100%, 420px);
+  background: #fff;
+  border-radius: 999px;
+  overflow: visible; /* importante */
+}
+
+.header-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  color: var(--text);
+  background: transparent;
+  border-radius: 999px 0 0 999px;
+}
+
+.header-search button {
+  border: none;
+  padding: 0.7rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 999px 999px 0;
+}
+
+.header-search button:hover {
+  background: #d87d00;
+  transform: none;
+}
+
+.header-search__results {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.header-search__results.is-active {
+  display: block;
+}
+
+.search-results__section {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.search-results__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.search-results__item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-results__item img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.search-results__name {
+  display: block;
+  font-weight: 600;
+}
+
+.search-results__price {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.search-results__category {
+  display: block;
+  padding: 0.35rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-results__empty {
+  padding: 1rem;
+  color: #666;
+}
+
+.search-results__all {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .header-search {
+    width: 100%;
+  }
+
+  .header-search input {
+    min-width: 0;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .header-search button {
+    padding: 0.65rem 0.8rem;
+    white-space: nowrap;
+  }
+
+  .header-search__results {
+    max-height: 70vh;
+    overflow: auto;
+  }
+}

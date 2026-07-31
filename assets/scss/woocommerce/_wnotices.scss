@@ -1,0 +1,16 @@
+// woocommerce/notices
+
+.woocommerce .woocommerce-message,
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info {
+  background: #f4f6f9;
+  border: 1px solid rgba(31, 76, 140, 0.16);
+  color: var(--text);
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.woocommerce .woocommerce-notices-wrapper:empty {
+  display: none;
+}

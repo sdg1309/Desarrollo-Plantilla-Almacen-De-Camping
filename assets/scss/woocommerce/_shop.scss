@@ -1,0 +1,75 @@
+// woocommerce/shop
+
+.post-list,
+.woocommerce ul.products {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+.woocommerce-shop-wrap {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin: 2rem auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.shop-main {
+  grid-column: 2;
+  min-width: 0;
+  width: 100%;
+}
+
+.shop-sidebar {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.shop-archive-header {
+  margin-bottom: 2rem;
+}
+
+.shop-archive-header .page-title {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.shop-loop-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.shop-loop-tools .woocommerce-result-count,
+.shop-loop-tools .woocommerce-ordering {
+  margin: 0;
+}
+
+.woocommerce ul.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 2rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  margin-bottom: 1.5rem;
+}

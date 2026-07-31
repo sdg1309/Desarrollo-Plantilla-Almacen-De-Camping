@@ -1,0 +1,16 @@
+// base/utilities
+
+.vl {
+  border-left: 2px solid var(--text);
+  height: auto;
+}
+
+/* Accesibilidad: label escondido visualmente */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

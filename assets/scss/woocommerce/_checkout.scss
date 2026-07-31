@@ -1,0 +1,37 @@
+// woocommerce/checkout
+
+.card,
+.product-card,
+.woocommerce .cart-form,
+.woocommerce .woocommerce-checkout {
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .cart_totals,
+.woocommerce .woocommerce-checkout-review-order-table {
+  margin-top: 1.5rem;
+}
+
+.woocommerce-checkout .col2-set,
+.woocommerce-checkout .col2-set .col-1,
+.woocommerce-checkout .col2-set .col-2 {
+  display: grid;
+}
+
+.woocommerce-checkout .col2-set {
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 1.75rem;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields,
+.woocommerce-checkout .woocommerce-shipping-fields {
+  padding: 1.5rem;
+}
+
+.woocommerce-checkout .woocommerce-checkout-review-order {
+  padding: 1.5rem;
+}

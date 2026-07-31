@@ -1,0 +1,15 @@
+// layout/sidebar
+
+.shop-sidebar {
+  width: 100%;
+  position: sticky;
+  top: 2rem;
+}
+
+.shop-sidebar .widget {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}

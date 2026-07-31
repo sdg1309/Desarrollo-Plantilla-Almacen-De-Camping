@@ -1,0 +1,128 @@
+// components/dropdown
+
+@use '../abstracts/variables' as *;
+
+.dropdown {
+  position: relative;
+  float: none;
+  overflow: visible;
+}
+
+.dropdown .dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  color: var(--text);
+  padding: 0.75rem 0.85rem;
+  border-radius: 999px;
+  background-color: var(--surface);
+  font-family: inherit;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.dropbtn a {
+  font-size: 0.9rem;
+  float: none;
+  color: var(--text);
+  background-color: var(--surface);
+  padding: 12px 0.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown .dropbtn:hover,
+.dropdown:hover .dropbtn i{
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+  max-width: 18rem;
+  background-color: var(--surface);
+  min-width: 12rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.header-nav .fa{
+  padding-left: calc(.5rem + (1.14 - .5) * ((100vw - 1025px) / (1600 - 1025)));
+  padding-right: calc(.5rem + (1.14 - .5) * ((100vw - 1025px) / (1600 - 1025)));
+}
+
+
+
+.dropdown-content a {
+  font-size: 12px;
+  float: none;
+  color: var(--text);
+  background-color: var(--surface);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: var(--accent);
+  background-color: var(--surface);
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+@media (min-width: 901px) and (max-width: 1180px) {
+  .dropdown .dropbtn {
+    padding: 0.65rem 0.65rem;
+    font-size: 0.84rem;
+  }
+
+  .header-nav .fa {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown .dropbtn {
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-content {
+    display: none !important;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .dropdown .dropbtn {
+    font-size: 0.82rem;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .header-nav .fa,
+  .dropdown .dropbtn i {
+    display: none;
+  }
+}

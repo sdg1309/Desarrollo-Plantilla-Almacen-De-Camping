@@ -1,0 +1,24 @@
+// pages/single
+
+.entry-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  line-height: 1.05;
+}
+
+.entry-meta,
+.post-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.entry-content p {
+  margin: 0 0 1.25rem;
+}
+
+.entry-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: #f4f6f9;
+  border-left: 4px solid var(--primary);
+}

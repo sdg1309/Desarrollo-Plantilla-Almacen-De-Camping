@@ -1,0 +1,66 @@
+// components/buttons
+
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button,
+.woocommerce #submit {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce a.button:hover,
+.woocommerce #submit:hover {
+  background: var(--accent);
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-height: 3rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 800;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  transform: translateY(-2px);
+}
+
+.home-btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.home-btn--primary:hover,
+.home-btn--primary:focus {
+  background: var(--primary);
+  color: #fff;
+}
+
+.home-btn--secondary {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.home-btn--secondary:hover,
+.home-btn--secondary:focus {
+  background: var(--primary);
+  color: #fff;
+}
+
+.home-info__content .home-btn {
+  margin-top: 1.75rem;
+  border: 1px solid var(--border);
+}

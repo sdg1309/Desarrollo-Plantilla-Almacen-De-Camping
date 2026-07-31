@@ -1,0 +1,34 @@
+// Archivo principal: importa los parciales en orden.
+
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'abstracts/functions';
+@use 'base/reset';
+@use 'base/general';
+@use 'base/typography';
+@use 'base/utilities';
+@use 'layout/containers';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/footer';
+@use 'layout/sidebar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/dropdown';
+@use 'components/slider';
+@use 'components/search';
+@use 'components/forms';
+@use 'components/notices';
+@use 'pages/front-page';
+@use 'pages/p404';
+@use 'pages/page';
+@use 'pages/single';
+@use 'pages/index';
+@use 'woocommerce/shop';
+@use 'woocommerce/single-product';
+@use 'woocommerce/cart';
+@use 'woocommerce/checkout';
+@use 'woocommerce/product-card';
+@use 'woocommerce/wnotices';
+@use 'responsive/tablet';
+@use 'responsive/mobile';

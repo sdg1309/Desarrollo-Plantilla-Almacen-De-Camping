@@ -1,0 +1,72 @@
+// pages/404
+
+.site-logo-404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-logo-404 img {
+  max-height: 160px;
+  width: auto;
+  display: block;
+  margin: 0;
+}
+
+.error-404 .page-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  min-height: 60vh;
+}
+
+.error-404 .page-header h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.03;
+  margin: 0;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.error-404 .page-header h2 {
+  font-size: clamp(1.1rem, 3.5vw, 1.75rem);
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.error-404 .page-content {
+  max-width: 70ch;
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.error-404 .site-header-left {
+  margin-bottom: 0.25rem;
+}
+
+.error-404 .page-title {
+  margin: 0;
+}
+
+.site-404 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+}
+
+.page-title-404 {
+  color: var(--primary);
+}

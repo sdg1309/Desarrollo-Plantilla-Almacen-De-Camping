@@ -1,0 +1,48 @@
+// components/forms
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button,
+.woocommerce #submit,
+button,
+input[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.85rem;
+  padding: 0.95rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce a.button:hover,
+.woocommerce #submit:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.woocommerce form .form-row,
+.woocommerce form .woocommerce-form-row {
+  margin-bottom: 1.3rem;
+}
+
+.woocommerce input.input-text,
+.woocommerce select,
+.woocommerce textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.95rem 1rem;
+  background: #fff;
+}

@@ -1,0 +1,37 @@
+// woocommerce/cart
+
+.woocommerce .woocommerce-cart-form table.shop_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.woocommerce .woocommerce-cart-form table.shop_table th,
+.woocommerce .woocommerce-cart-form table.shop_table td {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0.75rem;
+}
+
+.woocommerce .woocommerce-cart-form table.shop_table td.product-name,
+.woocommerce .woocommerce-cart-form table.shop_table td.product-price,
+.woocommerce .woocommerce-cart-form table.shop_table td.product-quantity,
+.woocommerce .woocommerce-cart-form table.shop_table td.product-subtotal {
+  vertical-align: middle;
+}
+
+.woocommerce .woocommerce-cart-form table.shop_table td.product-remove a {
+  color: var(--muted);
+}
+
+.woocommerce .woocommerce-cart-form .button {
+  margin-top: 1rem;
+}
+
+.woocommerce .cart-collaterals {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.woocommerce .cart_totals,
+.woocommerce .woocommerce-shipping-calculator {
+  padding: 1.5rem;
+}
