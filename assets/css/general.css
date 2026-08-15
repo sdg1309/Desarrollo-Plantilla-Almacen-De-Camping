@@ -181,6 +181,9 @@ a:focus {
   padding: 0 var(--spacing);
 }
 
+/* =========================
+   Custom Header
+========================= */
 .site-logo {
   width: 6rem;
   display: block;
@@ -294,9 +297,6 @@ a:focus {
   font-size: 0.85rem;
 }
 
-/* =========================
-   Custom Header
-========================= */
 .custom-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -384,7 +384,7 @@ a:focus {
     gap: 0.15rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .custom-header {
     display: grid;
   }
@@ -531,7 +531,7 @@ a:focus {
     gap: 0.45rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .header-container {
     margin: 0;
     padding-left: 0.85rem;
@@ -750,7 +750,7 @@ a:focus {
   max-width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .header-nav a {
     padding: 0.55rem 0.75rem;
     font-size: 0.88rem;
@@ -777,6 +777,9 @@ a:focus {
     padding: 0.55rem 0.7rem;
   }
 }
+/* =========================
+   Custom Footer
+========================= */
 .site-footer {
   padding: 2rem 0;
 }
@@ -1096,7 +1099,7 @@ a:focus {
     padding-right: 0.25rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .dropdown {
     width: 100%;
   }
@@ -1112,7 +1115,7 @@ a:focus {
     display: none !important;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .dropdown .dropbtn {
     font-size: 0.82rem;
     padding: 0.55rem 0.7rem;
@@ -1234,7 +1237,7 @@ a:focus {
   border-top: 1px solid #eee;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .header-search {
     width: 100%;
   }
@@ -1427,7 +1430,7 @@ input[type=submit]:hover {
 
 .home-category-card__image img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/4;
   object-fit: cover;
   display: block;
   transition: transform 0.25s ease;
@@ -1695,8 +1698,6 @@ input[type=submit]:hover {
     max-width: 9.75rem;
     max-height: 4.5rem;
   }
-}
-@media (max-width: 1000px) {
   .home-category-grid,
   .home-products-placeholder {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1829,7 +1830,7 @@ input[type=submit]:hover {
     padding-left: 1rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .home-hero h1 {
     font-size: 2.05rem;
   }
@@ -2438,7 +2439,7 @@ input[type=submit]:hover {
     max-height: 340px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .single-product-main {
     width: min(100%, 760px);
     padding-top: 2rem;
@@ -2866,7 +2867,7 @@ input[type=submit]:hover {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .site-branding {
     grid-template-columns: 1fr;
   }
@@ -2900,13 +2901,9 @@ input[type=submit]:hover {
   .woocommerce-checkout .col2-set {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 900px) {
   .site-branding,
   .footer-inner {
     flex-direction: column;
@@ -2928,8 +2925,6 @@ input[type=submit]:hover {
   .primary-navigation.active .menu {
     max-height: 300px;
   }
-}
-@media (max-width: 900px) {
   .woocommerce-shop-wrap {
     grid-template-columns: 1fr;
   }
@@ -2942,8 +2937,6 @@ input[type=submit]:hover {
     position: static;
     top: auto;
   }
-}
-@media (max-width: 900px) {
   .woocommerce div.product {
     grid-template-columns: 1fr;
   }
@@ -2952,7 +2945,7 @@ input[type=submit]:hover {
     justify-content: flex-end;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .error-404 {
     padding: 2rem 1rem;
     min-height: 45vh;
@@ -2969,13 +2962,9 @@ input[type=submit]:hover {
   .error-404 .page-header h2 {
     font-size: 1rem;
   }
-}
-@media (max-width: 600px) {
   .woocommerce ul.products {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 600px) {
   .home-hero {
     min-height: 520px;
   }
@@ -2998,7 +2987,7 @@ input[type=submit]:hover {
     padding: 3.5rem 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .footer-grid {
     grid-template-columns: 1fr;
     padding-top: 2rem;

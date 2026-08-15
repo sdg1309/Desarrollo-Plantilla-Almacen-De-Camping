@@ -1,5 +1,9 @@
 // layout/header
 
+/* =========================
+   Custom Header
+========================= */
+
 @use '../abstracts/variables' as *;
 
 .site-logo {
@@ -42,7 +46,9 @@
 }
 
 /* Hide the textual site title next to the logo, keep description */
-.site-branding-text .site-title { display: none; }
+.site-branding-text .site-title { 
+  display: none; 
+}
 
 .site-tools {
   display: flex;
@@ -113,9 +119,6 @@
   font-size: 0.85rem;
 }
 
-/* =========================
-   Custom Header
-========================= */
 .custom-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);

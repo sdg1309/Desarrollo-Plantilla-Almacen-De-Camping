@@ -1,6 +1,8 @@
 // responsive/mobile
 
-@media (max-width: 600px) {
+@use '../abstracts/variables' as *;
+
+@media (max-width: $bp-mobile) {
   .error-404 {
     padding: 2rem 1rem;
     min-height: 45vh;
@@ -20,15 +22,11 @@
   .error-404 .page-header h2 {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 600px) {
   .woocommerce ul.products {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 600px) {
   .home-hero {
     min-height: 520px;
   }
@@ -57,7 +55,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $bp-smallTablet) {
   .footer-grid {
     grid-template-columns: 1fr;
     padding-top: 2rem;

@@ -4,7 +4,8 @@
 - Nombre del tema: Almacén de Camping Custom
 - Desarrollador: Santiago Duque
 - Descripción: Tema personalizado de WordPress para Almacén de Camping SAS, con soporte para WooCommerce y estilos propios para la tienda y el sitio principal.
-- Versión: 1.0.2
+- GitHub: https://github.com/sdg1309/Desarrollo-Plantilla-Almacen-De-Camping
+- Versión: 1.0.3
 
 ## Características principales
 - Diseño personalizado para la identidad visual del negocio.

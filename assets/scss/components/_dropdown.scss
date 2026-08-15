@@ -84,7 +84,7 @@
   display: block;
 }
 
-@media (min-width: 901px) and (max-width: 1180px) {
+@media (min-width: $bp-tablet) and (max-width: $bp-desktop) {
   .dropdown .dropbtn {
     padding: 0.65rem 0.65rem;
     font-size: 0.84rem;

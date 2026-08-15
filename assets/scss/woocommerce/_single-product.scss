@@ -1,5 +1,8 @@
 // woocommerce/single-product
 
+@use '../abstracts/variables' as *;
+
+
 .single-product-main {
   width: min(100%, 1120px);
   max-width: none;
@@ -413,7 +416,7 @@
   padding: clamp(1.25rem, 3vw, 1.75rem);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: $bp-smallDesktop) {
   .single-product-main {
     width: min(100%, 980px);
   }
@@ -432,7 +435,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: $bp-tablet) {
   .single-product-main {
     width: min(100%, 760px);
     padding-top: 2rem;
@@ -474,7 +477,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: $bp-smallMobile) {
   .single-product-main {
     padding-left: 0.9rem;
     padding-right: 0.9rem;
@@ -566,7 +569,7 @@
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: $bp-xsmallMobile) {
   .alm-single-product__layout {
     display: flex;
     flex-direction: column;

@@ -1,7 +1,13 @@
 // abstracts/variables
 
-$bp-mobile: 600px;
-$bp-tablet: 900px;
+
+// @use '../abstracts/variables' as *;
+$bp-xsmallMobile: 480px;
+$bp-smallMobile: 520px;
+$bp-mobile: 640px;
+$bp-smallTablet: 760px;
+$bp-tablet: 901px;
+$bp-smallDesktop: 1100px;
 $bp-desktop: 1180px;
 
 $container-max-width: 1180px;

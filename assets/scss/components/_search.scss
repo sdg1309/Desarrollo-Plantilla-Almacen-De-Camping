@@ -1,5 +1,7 @@
 // components/search
 
+@use '../abstracts/variables' as *;
+
 /* Search */
 .header-search {
   position: relative; /* importante */
@@ -112,7 +114,7 @@
   border-top: 1px solid #eee;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $bp-mobile) {
   .header-search {
     width: 100%;
   }
