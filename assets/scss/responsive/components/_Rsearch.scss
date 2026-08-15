@@ -1,0 +1,26 @@
+/* =========================
+   Responsive Components / Search
+========================= */
+
+@use '../../abstracts/variables' as *;
+
+@media (max-width: $bp-mobile) {
+  .header-search {
+    width: 100%;
+  }
+
+  .header-search input {
+    min-width: 0;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .header-search button {
+    padding: 0.65rem 0.8rem;
+    white-space: nowrap;
+  }
+
+  .header-search__results {
+    max-height: 70vh;
+    overflow: auto;
+  }
+}

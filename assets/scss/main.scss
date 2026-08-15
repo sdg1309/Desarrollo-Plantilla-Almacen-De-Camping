@@ -1,3 +1,7 @@
+/* =========================
+	Main / Imports
+========================= */
+
 // Archivo principal: importa los parciales en orden.
 
 @use 'abstracts/variables';
@@ -30,5 +34,11 @@
 @use 'woocommerce/checkout';
 @use 'woocommerce/product-card';
 @use 'woocommerce/wnotices';
-@use 'responsive/tablet';
-@use 'responsive/mobile';
+@use 'responsive/breakpoints/tablet';
+@use 'responsive/breakpoints/mobile';
+@use 'responsive/components/Rdropdown';
+@use 'responsive/components/Rsearch';
+@use 'responsive/components/Rheader';
+@use 'responsive/components/Rnavigation';
+@use 'responsive/components/Rfront-page';
+@use 'responsive/components/Rsingle-product';

@@ -1,0 +1,101 @@
+/* =========================
+   Responsive / Tablet
+========================= */
+
+@use '../../abstracts/variables' as *;
+
+@media (max-width: $bp-tablet) {
+  .site-branding {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .primary-navigation {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .primary-navigation .menu {
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .primary-navigation.active .menu {
+    max-height: 400px;
+  }
+
+  .site-tools {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .woocommerce div.product {
+    grid-template-columns: 1fr;
+  }
+
+  .woocommerce-checkout .col2-set {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .site-branding,
+  .footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-navigation {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .primary-navigation .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .primary-navigation.active .menu {
+    max-height: 300px;
+  }
+
+  .woocommerce-shop-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-main,
+  .shop-sidebar {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .shop-sidebar {
+    position: static;
+    top: auto;
+  }
+
+  .woocommerce div.product {
+    grid-template-columns: 1fr;
+  }
+
+  .site-tools {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

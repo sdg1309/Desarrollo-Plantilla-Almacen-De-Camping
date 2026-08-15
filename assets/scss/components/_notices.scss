@@ -1,3 +1,11 @@
 // components/notices
 
+/* =========================
+	Components / Notices
+========================= */
 
+.woocommerce .woocommerce-message,
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info {
+  margin: 0 0 1rem;
+}

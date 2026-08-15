@@ -1,6 +1,8 @@
 // components/dropdown
 
-@use '../abstracts/variables' as *;
+/* =========================
+  Components / Dropdown
+========================= */
 
 .dropdown {
   position: relative;
@@ -82,47 +84,4 @@
 
 .dropdown:hover > .dropdown-content {
   display: block;
-}
-
-@media (min-width: $bp-tablet) and (max-width: $bp-desktop) {
-  .dropdown .dropbtn {
-    padding: 0.65rem 0.65rem;
-    font-size: 0.84rem;
-  }
-
-  .header-nav .fa {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-}
-
-@media (max-width: $bp-tablet) {
-  .dropdown {
-    width: 100%;
-  }
-
-  .dropdown .dropbtn {
-    justify-content: space-between;
-    width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    padding: 0.7rem 0.85rem;
-    font-size: 0.9rem;
-  }
-
-  .dropdown-content {
-    display: none !important;
-  }
-}
-
-@media (max-width: $bp-mobile) {
-  .dropdown .dropbtn {
-    font-size: 0.82rem;
-    padding: 0.55rem 0.7rem;
-  }
-
-  .header-nav .fa,
-  .dropdown .dropbtn i {
-    display: none;
-  }
 }
